@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ANDA · Asistente Andesnet</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="chat">
+    <header class="chat__head">
+      <div class="dot"></div>
+      <div>
+        <h1>ANDA</h1>
+        <p>Asistente de atención · Andesnet</p>
+      </div>
+    </header>
+
+    <section id="mensajes" class="chat__msgs" aria-live="polite">
+      <div class="msg msg--bot">
+        <p>Hola, soy ANDA. Puedo ayudarte con tu cuenta, fallas, planes y visitas técnicas. ¿En qué estás?</p>
+        <span class="meta">Hablas con un asistente automatizado</span>
+      </div>
+    </section>
+
+    <form id="forma" class="chat__input">
+      <input id="texto" type="text" autocomplete="off" maxlength="2000"
+             placeholder="Escribe tu mensaje…" aria-label="Mensaje">
+      <button id="enviar" type="submit">Enviar</button>
+    </form>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
