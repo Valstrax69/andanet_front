@@ -75,3 +75,41 @@ body {
 .chat__input input:focus { border-color: var(--acento); }
 .chat__input button { padding: 0 18px; border: 0; border-radius: 10px; background: var(--acento); color: #fff; font-weight: 600; cursor: pointer; }
 .chat__input button:disabled { opacity: .5; cursor: default; }
+
+/* --- EP3: campo de la clave de API y etiquetas del LLM --- */
+
+.chat__clave {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  padding: .5rem .9rem;
+  border-bottom: 1px solid #e5e7eb;
+  background: #f9fafb;
+  font-size: .78rem;
+}
+
+.chat__clave label {
+  color: #6b7280;
+  white-space: nowrap;
+}
+
+.chat__clave input {
+  flex: 1;
+  min-width: 0;
+  padding: .35rem .5rem;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font: inherit;
+  font-size: .78rem;
+}
+
+.chat__clave input:focus {
+  outline: 2px solid #93c5fd;
+  outline-offset: 0;
+}
+
+/* mientras el worker espera a NVIDIA */
+.badge--espera { background: #e5e7eb; color: #4b5563; }
+
+/* el texto que redacto el LLM */
+.badge--llm { background: #dbeafe; color: #1d4ed8; }

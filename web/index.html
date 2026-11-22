@@ -16,6 +16,14 @@
       </div>
     </header>
 
+    <!-- La API exige la cabecera X-API-Key desde EP3. Se guarda en el navegador
+         para no escribirla en cada mensaje; no se envía a ninguna otra parte. -->
+    <div class="chat__clave">
+      <label for="clave">Clave de API</label>
+      <input id="clave" type="password" autocomplete="off" spellcheck="false"
+             placeholder="X-API-Key" aria-label="Clave de API">
+    </div>
+
     <section id="mensajes" class="chat__msgs" aria-live="polite">
       <div class="msg msg--bot">
         <p>Hola, soy ANDA. Puedo ayudarte con tu cuenta, fallas, planes y visitas técnicas. ¿En qué estás?</p>
